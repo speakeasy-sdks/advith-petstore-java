@@ -18,7 +18,10 @@ jobs:
       speakeasy_version: latest
       openapi_doc_location: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
       languages: |-
-        - java
+        - go: go-client-sdk
+        - typescript: typescript-client-sdk
+        - java: java-client-sdk
+        - python: python-client-sdk
     secrets:
       speakeasy_api_key: ${{ secrets.SPEAKEASY_PROD_API_KEY }}
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
